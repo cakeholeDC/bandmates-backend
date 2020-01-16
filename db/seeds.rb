@@ -240,7 +240,7 @@ BandMembership.create(
 	)
 
 BandMembership.create(
-	musician: nil,
+
 	band: pipe_dreams,
 	instrument: harmonica
 	)
@@ -250,7 +250,6 @@ BandMembership.create(
 	instrument: clarinet
 	)
 BandMembership.create(
-	musician: nil,
 	band: pipe_dreams,
 	instrument: keyboard
 	)
@@ -286,7 +285,6 @@ BandMembership.create(
 	instrument: saxophone
 	)
 BandMembership.create(
-	musician: nil,
 	band: debugger,
 	instrument: cowbell
 	)
@@ -307,7 +305,6 @@ BandMembership.create(
 	)
 
 BandMembership.create(
-	musician: nil,
 	band: souuup,
 	instrument: harmonica
 	)
@@ -334,7 +331,6 @@ BandMembership.create(
 	instrument: guitar
 	)
 BandMembership.create(
-	musician: nil,
 	band: souuup,
 	instrument: flute
 	)
@@ -342,21 +338,17 @@ BandMembership.create(
 
 BandMembership.create(
 	musician: other_matt,
-	band: nil,
 	instrument: guitar
 	)
 BandMembership.create(
 	musician: jasur,
-	band: nil,
 	instrument: keyboard
 	)
 BandMembership.create(
 	musician: ann,
-	band: nil,
 	instrument: mandolin
 	)
 BandMembership.create(
 	musician: chine,
-	band: nil,
 	instrument: cowbell
 	)

@@ -1,5 +1,6 @@
 class BandMembership < ApplicationRecord
-  belongs_to :musician
-  belongs_to :band
+  belongs_to :musician, optional: true
+  belongs_to :band, optional: true
   belongs_to :instrument
+
 end
