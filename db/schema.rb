@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 2020_01_15_224317) do
   enable_extension "plpgsql"
 
   create_table "band_memberships", force: :cascade do |t|
-    t.bigint "musician_id", null: false
-    t.bigint "band_id", null: false
+    t.bigint "musician_id"
+    t.bigint "band_id"
     t.bigint "instrument_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -33,8 +33,10 @@ ActiveRecord::Schema.define(version: 2020_01_15_224317) do
     t.string "region"
     t.string "genre"
     t.string "logo"
+    t.bigint "musician_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["musician_id"], name: "index_bands_on_musician_id"
   end
 
   create_table "instruments", force: :cascade do |t|
@@ -47,6 +49,7 @@ ActiveRecord::Schema.define(version: 2020_01_15_224317) do
     t.string "name"
     t.datetime "birthdate"
     t.string "img"
+    t.string "region"
     t.text "bio"
     t.integer "playing_since"
     t.datetime "created_at", precision: 6, null: false
@@ -56,4 +59,5 @@ ActiveRecord::Schema.define(version: 2020_01_15_224317) do
   add_foreign_key "band_memberships", "bands"
   add_foreign_key "band_memberships", "instruments"
   add_foreign_key "band_memberships", "musicians"
+  add_foreign_key "bands", "musicians"
 end

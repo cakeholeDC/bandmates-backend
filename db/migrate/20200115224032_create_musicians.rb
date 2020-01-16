@@ -4,6 +4,7 @@ class CreateMusicians < ActiveRecord::Migration[6.0]
       t.string :name
       t.datetime :birthdate
       t.string :img
+      t.string :region
       t.text :bio
       t.integer :playing_since
 

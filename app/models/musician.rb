@@ -1,5 +1,6 @@
 class Musician < ApplicationRecord
-	has_many :BandMemberships
-	has_many :Instruments, through: :BandMemberships
-	has_many :Bands, through: :BandMemberships
+	has_many :band_memberships
+	has_many :instruments, through: :band_memberships
+	has_many :bands, through: :band_memberships
+	has_many :managed, class_name: "Band", foreign_key: 'musician_id'
 end

@@ -7,6 +7,7 @@ class CreateBands < ActiveRecord::Migration[6.0]
       t.string :region
       t.string :genre
       t.string :logo
+      t.references :musician, null: false, foreign_key: true
 
       t.timestamps
     end

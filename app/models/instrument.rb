@@ -1,5 +1,5 @@
 class Instrument < ApplicationRecord
-	has_many :BandMemberships
-	has_many :Bands, through: :BandMemberships
-	has_many :Musicians, through: :BandMemberships
+	has_many :band_memberships
+	has_many :bands, through: :band_memberships
+	has_many :musicians, through: :band_memberships
 end
