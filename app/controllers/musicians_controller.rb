@@ -13,7 +13,8 @@ class MusiciansController < ApplicationController
                 		:genre, 
                 		band_leader: { only: :name }
                 	] 
-                }, 
+                },
+                instruments_played: {except: [:id, :updated_at, :created_at] }, 
                 managed: { only: :name } 
             ]
         )
