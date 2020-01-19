@@ -7,7 +7,8 @@ class MusiciansController < ApplicationController
             include: [ 
                 bands: { only: 
                 	[
-                		:name, 
+                		:id,
+                        :name, 
                 		:established,
                 		:region, 
                 		:genre, 
@@ -15,7 +16,7 @@ class MusiciansController < ApplicationController
                 	] 
                 },
                 instruments_played: {except: [:id, :updated_at, :created_at] }, 
-                managed: { only: :name } 
+                managed: { only: [:name, :id] } 
             ]
         )
     end

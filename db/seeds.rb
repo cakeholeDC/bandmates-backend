@@ -183,19 +183,19 @@ BandMembership.create(
 	instrument: drums
 	)
 
-loner = Band.create(
-	name:"Loner",
+hype = Band.create(
+	name:"Hype",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero porta sem tempor fermentum ac dignissim nibh. Proin vel mi ut nibh mattis mollis. Pellentesque facilisis luctus metus posuere sollicitudin. Proin cursus hendrerit libero. Aliquam malesuada dictum libero, id ultricies lorem euismod ac. Ut vehicula viverra bibendum. Nam facilisis nisl id odio pellentesque, ac ornare ligula malesuada. Vestibulum tincidunt nisi at lectus suscipit, luctus consequat est laoreet. Pellentesque ligula enim, tincidunt nec aliquam fermentum, facilisis at lorem.",
 	established: "2012",
 	region: "Murfreesboro, TN",
-	genre: "American K-Pop",
+	genre: "Grunge",
 	band_leader: chine,
 	logo: "https://app.logoshuffle.com/Content/Logos/aaf289c7-c11a-4fec-a5b4-81f53bf7cef9.png"
 	)
 
 BandMembership.create(
 	musician: chine,
-	band: loner,
+	band: hype,
 	instrument: bass
 	)
 
