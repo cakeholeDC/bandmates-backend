@@ -144,7 +144,7 @@ pipe_dreams = Band.create(
 	region: "Washington, DC",
 	genre: "folk metal",
 	band_leader: kyle,
-	logo: "https://app.logoshuffle.com/Content/Logos/c6710668-9f33-4058-8225-5b61e607349a.png"
+	logo: "https://f4.bcbits.com/img/a0333911796_10.jpg"
 	)
 
 debugger = Band.create(
@@ -154,7 +154,7 @@ debugger = Band.create(
 	region: "Frankfurt, Germany",
 	genre: "new wave",
 	band_leader: jose,
-	logo: "https://app.logoshuffle.com/Content/Logos/bcb9af13-f64d-4a8c-890e-2de5a494d962.png"
+	logo: "https://metalodyssey.files.wordpress.com/2011/11/wizard-group-promo-pic-1.png?w=584"
 	)
 
 souuup = Band.create(
@@ -164,7 +164,7 @@ souuup = Band.create(
 	region: "Washington, DC",
 	genre: "soul",
 	band_leader: ryan,
-	logo: "https://app.logoshuffle.com/Content/Logos/025ba736-37e2-4b09-aca4-388472820e78.png"
+	logo: "https://scontent-iad3-1.xx.fbcdn.net/v/t31.0-8/p960x960/18193445_10154531538308443_4508704384049322686_o.jpg?_nc_cat=109&_nc_oc=AQmFcGS2M_Ggyai0BgYTAC16d37K6hPNq-SnDA_kwZt7e084qHruP0de8rzwRZduVmQ&_nc_ht=scontent-iad3-1.xx&_nc_tp=1002&oh=f8eefc38c0438ef4ef3f4fe7c1044511&oe=5E929B79"
 	)
 
 breathe = Band.create(
@@ -174,7 +174,7 @@ breathe = Band.create(
 	region: "Washington, DC",
 	genre: "Jazz",
 	band_leader: remi,
-	logo: "https://app.logoshuffle.com/Content/Logos/f838ff9b-5de3-4282-a1f4-e52a8e1264df.png"
+	logo: "https://upload.wikimedia.org/wikipedia/en/0/06/All_That_Jazz_cover.jpg"
 	)
 
 BandMembership.create(
@@ -190,7 +190,7 @@ hype = Band.create(
 	region: "Murfreesboro, TN",
 	genre: "Grunge",
 	band_leader: chine,
-	logo: "https://app.logoshuffle.com/Content/Logos/aaf289c7-c11a-4fec-a5b4-81f53bf7cef9.png"
+	logo: "https://cdn.shopify.com/s/files/1/2173/5667/products/hype-neon-light-amped-co-black-and-white_645.jpg?v=1539326827"
 	)
 
 BandMembership.create(
@@ -206,7 +206,7 @@ tribal_scenes = Band.create(
 	region: "Kingston, Jamaica",
 	genre: "Reggae",
 	band_leader: trevor,
-	logo: "https://app.logoshuffle.com/Content/Logos/2b5881d9-d9d3-4bac-9057-399cb7034a9f.png"
+	logo: "https://jamaicans.com/wp-content/uploads/University-of-Minnesota-Hosts-Institute-of-Reggae-Studies.jpg"
 	)
 
 BandMembership.create(
