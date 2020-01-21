@@ -5,6 +5,7 @@ class Band < ApplicationRecord
 	belongs_to :band_leader, class_name: "Musician", foreign_key: "musician_id"
 
 		# self.band_membership.lineup
+	
 
 end
 

@@ -14,6 +14,7 @@ Instrument.destroy_all
 kyle = Musician.create(
 	name: 'Kyle Cole',
 	username: 'Cakehole',
+	password: "password",
 	birthdate: Date.new(1988, 6, 21),
 	img: "https://images.unsplash.com/photo-1566768514716-bf40f43b4fb5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero porta sem tempor fermentum ac dignissim nibh. Proin vel mi ut nibh mattis mollis. Pellentesque facilisis luctus metus posuere sollicitudin. Proin cursus hendrerit libero. Aliquam malesuada dictum libero, id ultricies lorem euismod ac. Ut vehicula viverra bibendum. Nam facilisis nisl id odio pellentesque, ac ornare ligula malesuada. Vestibulum tincidunt nisi at lectus suscipit, luctus consequat est laoreet. Pellentesque ligula enim, tincidunt nec aliquam fermentum, facilisis at lorem.",
@@ -23,6 +24,7 @@ kyle = Musician.create(
 other_matt = Musician.create(
 	name: "Matt Heavner",
 	username: "Other Matt",
+	password: "password",
 	birthdate: Date.new(1995, 2, 14),
 	img: "https://images.unsplash.com/photo-1573037722315-eb5f8a1be3c0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero porta sem tempor fermentum ac dignissim nibh. Proin vel mi ut nibh mattis mollis. Pellentesque facilisis luctus metus posuere sollicitudin. Proin cursus hendrerit libero. Aliquam malesuada dictum libero, id ultricies lorem euismod ac. Ut vehicula viverra bibendum. Nam facilisis nisl id odio pellentesque, ac ornare ligula malesuada. Vestibulum tincidunt nisi at lectus suscipit, luctus consequat est laoreet. Pellentesque ligula enim, tincidunt nec aliquam fermentum, facilisis at lorem.",
@@ -32,6 +34,7 @@ other_matt = Musician.create(
 matt = Musician.create(
 	name: 'Matt Bechtel',
 	username: 'Matty B',
+	password: "password",
 	birthdate: Date.new(1970, 1, 1),
 	img: "https://images.unsplash.com/photo-1525800167674-4bb678aaca51?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero porta sem tempor fermentum ac dignissim nibh. Proin vel mi ut nibh mattis mollis. Pellentesque facilisis luctus metus posuere sollicitudin. Proin cursus hendrerit libero. Aliquam malesuada dictum libero, id ultricies lorem euismod ac. Ut vehicula viverra bibendum. Nam facilisis nisl id odio pellentesque, ac ornare ligula malesuada. Vestibulum tincidunt nisi at lectus suscipit, luctus consequat est laoreet. Pellentesque ligula enim, tincidunt nec aliquam fermentum, facilisis at lorem.",
@@ -41,6 +44,7 @@ matt = Musician.create(
 sara = Musician.create(
 	name: 'Sara Tarnvik',
 	username: 'swedish sara',
+	password: "password",
 	birthdate: Date.new(1992, 1, 7),
 	img: "https://images.unsplash.com/photo-1516114712160-32ef1b4a8915?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero porta sem tempor fermentum ac dignissim nibh. Proin vel mi ut nibh mattis mollis. Pellentesque facilisis luctus metus posuere sollicitudin. Proin cursus hendrerit libero. Aliquam malesuada dictum libero, id ultricies lorem euismod ac. Ut vehicula viverra bibendum. Nam facilisis nisl id odio pellentesque, ac ornare ligula malesuada. Vestibulum tincidunt nisi at lectus suscipit, luctus consequat est laoreet. Pellentesque ligula enim, tincidunt nec aliquam fermentum, facilisis at lorem.",
@@ -50,6 +54,7 @@ sara = Musician.create(
 will = Musician.create(
 	name: 'Will Drougas',
 	username: 'Big Willie',
+	password: "password",
 	birthdate: Date.new(1970, 1, 1),
 	img: "https://images.unsplash.com/photo-1512146431923-80b5cadeedc1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero porta sem tempor fermentum ac dignissim nibh. Proin vel mi ut nibh mattis mollis. Pellentesque facilisis luctus metus posuere sollicitudin. Proin cursus hendrerit libero. Aliquam malesuada dictum libero, id ultricies lorem euismod ac. Ut vehicula viverra bibendum. Nam facilisis nisl id odio pellentesque, ac ornare ligula malesuada. Vestibulum tincidunt nisi at lectus suscipit, luctus consequat est laoreet. Pellentesque ligula enim, tincidunt nec aliquam fermentum, facilisis at lorem.",
@@ -59,6 +64,7 @@ will = Musician.create(
 jose = Musician.create(
 	name: 'José Romero',
 	username: 'OG José',
+	password: "password",
 	birthdate: Date.new(1970, 1, 1),
 	img: "https://images.unsplash.com/photo-1558847161-afe98cd8bd3f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero porta sem tempor fermentum ac dignissim nibh. Proin vel mi ut nibh mattis mollis. Pellentesque facilisis luctus metus posuere sollicitudin. Proin cursus hendrerit libero. Aliquam malesuada dictum libero, id ultricies lorem euismod ac. Ut vehicula viverra bibendum. Nam facilisis nisl id odio pellentesque, ac ornare ligula malesuada. Vestibulum tincidunt nisi at lectus suscipit, luctus consequat est laoreet. Pellentesque ligula enim, tincidunt nec aliquam fermentum, facilisis at lorem.",
@@ -68,6 +74,7 @@ jose = Musician.create(
 jasur = Musician.create(
 	name: 'Jasur Abdullin',
 	username: 'Jas.ur',
+	password: "password",
 	birthdate: Date.new(1993, 10, 9),
 	img: "https://images.unsplash.com/photo-1515006813794-d83c6372f898?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero porta sem tempor fermentum ac dignissim nibh. Proin vel mi ut nibh mattis mollis. Pellentesque facilisis luctus metus posuere sollicitudin. Proin cursus hendrerit libero. Aliquam malesuada dictum libero, id ultricies lorem euismod ac. Ut vehicula viverra bibendum. Nam facilisis nisl id odio pellentesque, ac ornare ligula malesuada. Vestibulum tincidunt nisi at lectus suscipit, luctus consequat est laoreet. Pellentesque ligula enim, tincidunt nec aliquam fermentum, facilisis at lorem.",
@@ -77,6 +84,7 @@ jasur = Musician.create(
 remi = Musician.create(
 	name: 'Remi Odufuye',
 	username: 'Remification',
+	password: "password",
 	birthdate: Date.new(1970, 1, 1),
 	img: "https://images.unsplash.com/flagged/photo-1567664807562-cad412158d03?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero porta sem tempor fermentum ac dignissim nibh. Proin vel mi ut nibh mattis mollis. Pellentesque facilisis luctus metus posuere sollicitudin. Proin cursus hendrerit libero. Aliquam malesuada dictum libero, id ultricies lorem euismod ac. Ut vehicula viverra bibendum. Nam facilisis nisl id odio pellentesque, ac ornare ligula malesuada. Vestibulum tincidunt nisi at lectus suscipit, luctus consequat est laoreet. Pellentesque ligula enim, tincidunt nec aliquam fermentum, facilisis at lorem.",
@@ -86,6 +94,7 @@ remi = Musician.create(
 sebastian = Musician.create(
 	name: 'Sebastian Delima',
 	username: 'Se-bass-tian',
+	password: "password",
 	birthdate: Date.new(1970, 1, 1),
 	img: "https://images.unsplash.com/photo-1565022449228-da5a3f947ed3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero porta sem tempor fermentum ac dignissim nibh. Proin vel mi ut nibh mattis mollis. Pellentesque facilisis luctus metus posuere sollicitudin. Proin cursus hendrerit libero. Aliquam malesuada dictum libero, id ultricies lorem euismod ac. Ut vehicula viverra bibendum. Nam facilisis nisl id odio pellentesque, ac ornare ligula malesuada. Vestibulum tincidunt nisi at lectus suscipit, luctus consequat est laoreet. Pellentesque ligula enim, tincidunt nec aliquam fermentum, facilisis at lorem.",
@@ -95,6 +104,7 @@ sebastian = Musician.create(
 young = Musician.create(
 	name: 'Young Han',
 	username: 'DJ Young',
+	password: "password",
 	birthdate: Date.new(1970, 1, 1),
 	img: "https://images.unsplash.com/photo-1509973385458-f9609c21b528?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero porta sem tempor fermentum ac dignissim nibh. Proin vel mi ut nibh mattis mollis. Pellentesque facilisis luctus metus posuere sollicitudin. Proin cursus hendrerit libero. Aliquam malesuada dictum libero, id ultricies lorem euismod ac. Ut vehicula viverra bibendum. Nam facilisis nisl id odio pellentesque, ac ornare ligula malesuada. Vestibulum tincidunt nisi at lectus suscipit, luctus consequat est laoreet. Pellentesque ligula enim, tincidunt nec aliquam fermentum, facilisis at lorem.",
@@ -104,6 +114,7 @@ young = Musician.create(
 ryan = Musician.create(
 	name: 'Ryan Charles Smith',
 	username: 'Mr. Charles',
+	password: "password",
 	birthdate: Date.new(2001, 6, 17),
 	img: "https://images.unsplash.com/photo-1575665152158-1e4ffadc44cb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero porta sem tempor fermentum ac dignissim nibh. Proin vel mi ut nibh mattis mollis. Pellentesque facilisis luctus metus posuere sollicitudin. Proin cursus hendrerit libero. Aliquam malesuada dictum libero, id ultricies lorem euismod ac. Ut vehicula viverra bibendum. Nam facilisis nisl id odio pellentesque, ac ornare ligula malesuada. Vestibulum tincidunt nisi at lectus suscipit, luctus consequat est laoreet. Pellentesque ligula enim, tincidunt nec aliquam fermentum, facilisis at lorem.",
@@ -113,6 +124,7 @@ ryan = Musician.create(
 chine = Musician.create(
 	name: 'Chine Anikwe',
 	username: 'Chine Official',
+	password: "password",
 	birthdate: Date.new(1970, 1, 1),
 	img: "https://images.unsplash.com/photo-1565227748061-b5935bb64665?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero porta sem tempor fermentum ac dignissim nibh. Proin vel mi ut nibh mattis mollis. Pellentesque facilisis luctus metus posuere sollicitudin. Proin cursus hendrerit libero. Aliquam malesuada dictum libero, id ultricies lorem euismod ac. Ut vehicula viverra bibendum. Nam facilisis nisl id odio pellentesque, ac ornare ligula malesuada. Vestibulum tincidunt nisi at lectus suscipit, luctus consequat est laoreet. Pellentesque ligula enim, tincidunt nec aliquam fermentum, facilisis at lorem.",
@@ -122,6 +134,7 @@ chine = Musician.create(
 trevor = Musician.create(
 	name: 'Trevor Jameson',
 	username: 'DJ TJ',
+	password: "password",
 	birthdate: Date.new(1970, 1, 1),
 	img: "https://images.unsplash.com/photo-1544514471-7ee071056d58?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero porta sem tempor fermentum ac dignissim nibh. Proin vel mi ut nibh mattis mollis. Pellentesque facilisis luctus metus posuere sollicitudin. Proin cursus hendrerit libero. Aliquam malesuada dictum libero, id ultricies lorem euismod ac. Ut vehicula viverra bibendum. Nam facilisis nisl id odio pellentesque, ac ornare ligula malesuada. Vestibulum tincidunt nisi at lectus suscipit, luctus consequat est laoreet. Pellentesque ligula enim, tincidunt nec aliquam fermentum, facilisis at lorem.",
@@ -131,6 +144,7 @@ trevor = Musician.create(
 ann = Musician.create(
 	name: 'Ann Duong',
 	username: 'Thuyan Song',
+	password: "password",
 	birthdate: Date.new(1970, 1, 1),
 	img: "https://images.unsplash.com/photo-1578873375841-468b1557216f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero porta sem tempor fermentum ac dignissim nibh. Proin vel mi ut nibh mattis mollis. Pellentesque facilisis luctus metus posuere sollicitudin. Proin cursus hendrerit libero. Aliquam malesuada dictum libero, id ultricies lorem euismod ac. Ut vehicula viverra bibendum. Nam facilisis nisl id odio pellentesque, ac ornare ligula malesuada. Vestibulum tincidunt nisi at lectus suscipit, luctus consequat est laoreet. Pellentesque ligula enim, tincidunt nec aliquam fermentum, facilisis at lorem.",
