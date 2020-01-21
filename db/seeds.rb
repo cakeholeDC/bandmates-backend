@@ -157,6 +157,26 @@ debugger = Band.create(
 	logo: "https://metalodyssey.files.wordpress.com/2011/11/wizard-group-promo-pic-1.png?w=584"
 	)
 
+spork = Band.create(
+	name:"Spørk",
+	bio: "We're Spørk. We are like Spoon, but multi-purpose. Nyt musikken vår!",
+	established: "2007",
+	region: "Lindøya, Oslofjord, Norway",
+	genre: "Disco Rock",
+	band_leader: will,
+	logo: "https://d2v48i7nl75u94.cloudfront.net/uploads/48449feb950fdc148220ab56e54084fe.jpeg"
+	)
+
+flatiron_maiden  = Band.create(
+	name:"Flatiron Maiden",
+	bio: "An All-Ladies Eighties Tribute Band.",
+	established: "1992",
+	region: "Washington, DC",
+	genre: "Educational Metal",
+	band_leader: chine,
+	logo: "https://img-dev.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F66184841%2F314933172755%2F1%2Foriginal.20190722-190131?auto=compress&fit=clip&h=&w=650&s=e81bfd918602bc588782c553c7075943"
+	)
+
 souuup = Band.create(
 	name:"Souuup",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero porta sem tempor fermentum ac dignissim nibh. Proin vel mi ut nibh mattis mollis. Pellentesque facilisis luctus metus posuere sollicitudin. Proin cursus hendrerit libero. Aliquam malesuada dictum libero, id ultricies lorem euismod ac. Ut vehicula viverra bibendum. Nam facilisis nisl id odio pellentesque, ac ornare ligula malesuada. Vestibulum tincidunt nisi at lectus suscipit, luctus consequat est laoreet. Pellentesque ligula enim, tincidunt nec aliquam fermentum, facilisis at lorem.",
