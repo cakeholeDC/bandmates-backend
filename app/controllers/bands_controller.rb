@@ -62,5 +62,33 @@ class BandsController < ApplicationController
         )
     end
 
+    def update
+        band = Band.find(params[:id])
+        band.update(
+            name: params[:name],
+            bio: params[:bio],
+            established: params[:established].to_i,
+            region: params[:region],
+            genre: params[:genre],
+            logo: params[:logo],
+            musician_id: params[:musician_id]
+        )
+        band.save
+
+        render json: band.to_json(
+            except: [:updated_at, :created_at], 
+            include: [ 
+                band_memberships: { 
+                    only: [ :id ], 
+                    include: [ 
+                        musician: { except: [ :created_at, :updated_at, :bio] }, 
+                        instrument:  { except: [ :created_at, :updated_at] }
+                    ] 
+                }, 
+                band_leader: { except: [ :created_at, :updated_at ] } 
+            ]
+        )
+    end
+
    
 end
