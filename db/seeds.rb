@@ -197,6 +197,16 @@ breathe = Band.create(
 	logo: "https://upload.wikimedia.org/wikipedia/en/0/06/All_That_Jazz_cover.jpg"
 	)
 
+delorean_ipsum = Band.create(
+	name:"Delorean Ipsum",
+	bio: "Music and stuff.",
+	established: "1984",
+	region: "Scranton, PA",
+	genre: "Goth Folk Metal",
+	band_leader: remi,
+	logo: "https://www.drupal.org/files/project-images/delorean.jpg"
+	)
+
 BandMembership.create(
 	musician: remi,
 	band: breathe,
