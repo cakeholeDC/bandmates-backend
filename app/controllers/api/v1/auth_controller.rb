@@ -30,25 +30,22 @@ class Api::V1::AuthController < ApplicationController
 			                instruments_played: {except: [:id, :updated_at, :created_at] }, 
 			                managed: { only: [:name, :id] } 
 			            ]
-			        ),
-					jwt: token
-				}, status: :accepted
-
-			# userExistsWithoutAuth
-			else
-				render json: {
-					error: true,
-					message: "Incorrect Password"
-				}, status: :unauthorized
-			end
-			
-		#userDoesNotExist
-		else
-			render json: {
-				error: true,
-				message: "Username not found"
-			}, status: :payment_required
-		end
-	end
-
+						),
+						jwt: token
+						}, status: :accepted
+						# userExistsWithoutAuth
+					else
+						render json: {
+							error: true,
+							message: "Incorrect Password"
+							}, status: :unauthorized
+						end
+						#userDoesNotExist
+					else
+						render json: {
+							error: true,
+							message: "Username not found"
+							}, status: :payment_required
+						end
+					end
 end

@@ -83,13 +83,10 @@ class MusiciansController < ApplicationController
 
         payload = decode(token)
 
-        # musician = Musician.find(payload["musician_id"])
+        musician = Musician.find(payload["musician_id"])
         #
-        musician = Musician.find_by(username: "Cakehole")
+        # musician = Musician.find_by(username: "Cakehole")
         #
-        #
-        #
-
         render json: musician.to_json(
             except: [:updated_at, :created_at], 
             include: [ 
@@ -110,3 +107,15 @@ class MusiciansController < ApplicationController
     end
 
 end
+# class Api::V1::UsersController < ApplicationController
+#     def index
+#       render json: User.all
+#     end
+  
+#     def profile
+#       token = request.headers["Authentication"]
+#       payload = decode(token)
+#       user = User.find(payload["user_id"])
+#       render json: user
+#     end
+#   end
