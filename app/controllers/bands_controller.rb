@@ -90,5 +90,10 @@ class BandsController < ApplicationController
         )
     end
 
+    def destroy
+        band = Band.find(params[:id])
+        band.destroy
+    end
+
    
 end
