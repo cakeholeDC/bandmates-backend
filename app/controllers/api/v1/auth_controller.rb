@@ -2,12 +2,17 @@ class Api::V1::AuthController < ApplicationController
 
 	def create
 		musicianInstance = Musician.find_by(username: params[:username])
+
+		# isUserFound?
 		if musicianInstance
-			#if username exists
+			
+			# canUserBeAuthenticated?
 			if musicianInstance.authenticate(params[:password])
-				#if username can be authenticated
+				
+				# setUserToken
 				token = encode({ musician_id: musicianInstance.id })
 
+				# renderSerializedUserData
 				render json: {
 					currentUser: musicianInstance.to_json(
 			            except: [:updated_at, :created_at], 
@@ -28,15 +33,17 @@ class Api::V1::AuthController < ApplicationController
 			        ),
 					jwt: token
 				}, status: :accepted
+
+			# userExistsWithoutAuth
 			else
-				#username exists, but password is incorrect
 				render json: {
 					error: true,
 					message: "Incorrect Password"
 				}, status: :unauthorized
 			end
+			
+		#userDoesNotExist
 		else
-			#username not found
 			render json: {
 				error: true,
 				message: "Username not found"

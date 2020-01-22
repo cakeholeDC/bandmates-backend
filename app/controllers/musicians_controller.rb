@@ -78,9 +78,17 @@ class MusiciansController < ApplicationController
     end
 
     def profile
+        # byebug
         token = request.headers["Authentication"]
+
         payload = decode(token)
-        musician = Musician.find(payload["musician_id"])
+
+        # musician = Musician.find(payload["musician_id"])
+        #
+        musician = Musician.find_by(username: "Cakehole")
+        #
+        #
+        #
 
         render json: musician.to_json(
             except: [:updated_at, :created_at], 
