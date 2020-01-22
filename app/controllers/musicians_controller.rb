@@ -77,16 +77,45 @@ class MusiciansController < ApplicationController
         }
     end
 
+    def update
+        musician = Musician.find(params[:id])
+        musician = Musician.update(
+            username: params[:username], 
+            password: params[:password], 
+            name: params[:name], 
+            region: params[:region], 
+            playing_since: params[:playing_since], 
+            birthdate: params[:birthdate], 
+            img: params[:img], 
+            bio: params[:bio]
+        )
+        musician.save
+        render json: musician.to_json(
+                except: [:updated_at, :created_at], 
+                include: [ 
+                    associated_bands: { only: 
+                        [
+                            :id,
+                            :name, 
+                            :established,
+                            :region, 
+                            :genre, 
+                            band_leader: { only: :name }
+                        ] 
+                    },
+                    instruments_played: {except: [:id, :updated_at, :created_at] }, 
+                    managed: { only: [:name, :id] } 
+                ]
+            )
+    end
+
     def profile
-        # byebug
         token = request.headers["Authentication"]
 
         payload = decode(token)
 
         musician = Musician.find(payload["musician_id"])
-        #
-        # musician = Musician.find_by(username: "Cakehole")
-        #
+
         render json: musician.to_json(
             except: [:updated_at, :created_at], 
             include: [ 
@@ -106,16 +135,9 @@ class MusiciansController < ApplicationController
         )
     end
 
+    def destroy
+        musician = Musician.find(params[:id])
+        musician.destroy
+    end
 end
-# class Api::V1::UsersController < ApplicationController
-#     def index
-#       render json: User.all
-#     end
-  
-#     def profile
-#       token = request.headers["Authentication"]
-#       payload = decode(token)
-#       user = User.find(payload["user_id"])
-#       render json: user
-#     end
-#   end
+
