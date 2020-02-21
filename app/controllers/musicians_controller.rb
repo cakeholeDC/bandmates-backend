@@ -3,7 +3,7 @@ class MusiciansController < ApplicationController
 	def index
         musicians = Musician.all
         render json: musicians.to_json(
-            except: [:updated_at, :created_at], 
+            except: [:updated_at, :created_at, :password_digest], 
             include: [ 
                 associated_bands: { only: 
                 	[
@@ -24,7 +24,7 @@ class MusiciansController < ApplicationController
     def show
         musician = Musician.find(params[:id])
         render json: musician.to_json(
-            except: [:updated_at, :created_at], 
+            except: [:updated_at, :created_at, :password_digest], 
             include: [ 
                 associated_bands: { only: 
                     [
@@ -58,7 +58,7 @@ class MusiciansController < ApplicationController
         render json: {
             jwt: token,
             currentUser: musician.to_json(
-                except: [:updated_at, :created_at], 
+                except: [:updated_at, :created_at, :password_digest], 
                 include: [ 
                     associated_bands: { only: 
                         [
@@ -91,7 +91,7 @@ class MusiciansController < ApplicationController
         )
         musician.save
         render json: musician.to_json(
-                except: [:updated_at, :created_at], 
+                except: [:updated_at, :created_at, :password_digest], 
                 include: [ 
                     associated_bands: { only: 
                         [
@@ -117,7 +117,7 @@ class MusiciansController < ApplicationController
         musician = Musician.find(payload["musician_id"])
 
         render json: musician.to_json(
-            except: [:updated_at, :created_at], 
+            except: [:updated_at, :created_at, :password_digest], 
             include: [ 
                 associated_bands: { only: 
                     [
