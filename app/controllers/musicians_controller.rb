@@ -79,7 +79,7 @@ class MusiciansController < ApplicationController
 
     def update
         musician = Musician.find(params[:id])
-        musician = Musician.update(
+        musician.update(
             username: params[:username], 
             password: params[:password], 
             name: params[:name], 
