@@ -1,5 +1,29 @@
 class Api::V1::AuthController < ApplicationController
 
+	def index
+		musician = Musician.first 
+
+		render json: {
+					currentUser: musician.to_json(
+			            except: [:updated_at, :created_at], 
+			            include: [ 
+			                associated_bands: { only: 
+			                	[
+			                		:id,
+			                        :name, 
+			                		:established,
+			                		:region, 
+			                		:genre, 
+			                		band_leader: { only: :name }
+			                	] 
+			                },
+			                instruments_played: {except: [:id, :updated_at, :created_at] }, 
+			                managed: { only: [:name, :id] } 
+			            ]
+					),
+				}
+	end 
+
 	def create
 		musicianInstance = Musician.find_by(username: params[:username])
 
@@ -30,22 +54,24 @@ class Api::V1::AuthController < ApplicationController
 			                instruments_played: {except: [:id, :updated_at, :created_at] }, 
 			                managed: { only: [:name, :id] } 
 			            ]
-						),
-						jwt: token
-						}, status: :accepted
-						# userExistsWithoutAuth
-					else
-						render json: {
-							error: true,
-							message: "Incorrect Password"
-							}, status: :unauthorized
-						end
-						#userDoesNotExist
-					else
-						render json: {
-							error: true,
-							message: "Username not found"
-							}, status: :payment_required
-						end
-					end
+					),
+					jwt: token
+				}, status: :accepted
+				
+			# userExistsWithoutAuth
+			else
+				render json: {
+					error: true,
+					message: "Incorrect Password"
+				}, status: :unauthorized
+			end
+		#userDoesNotExist
+		else
+			render json: {
+				error: true,
+				message: "Username not found"
+			}, status: :payment_required
+		end
+
+	end
 end
