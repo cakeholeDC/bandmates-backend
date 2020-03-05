@@ -92,6 +92,7 @@ class BandsController < ApplicationController
 
     def destroy
         band = Band.find(params[:id])
+        band.band_memberships.destroy_all
         band.destroy
     end
 
